@@ -12,10 +12,15 @@
 .three{
     margin-left: 250px;
 }
-/* .nav-buttons:hover{
-    background-color: black;
-    color: white;
+.nav-links{
+    color: rgb(106, 100, 100);
+}
+/* .nav-links:hover{
+  color: black;    
 } */
+.active-link {
+    color: rgb(10, 10, 10) !important; 
+}
 .image{
     position: relative;
     z-index: 1;

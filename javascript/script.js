@@ -8,7 +8,7 @@ async function fetchData() {
         displayProducts(data); 
     } catch (error) {
         console.error("Error fetching data:", error);
-        alert("Failed to load products. Please try again later.");
+        alert("Takes more time then usual to load products. Please refresh the page.");
     }
 }
 
@@ -67,3 +67,15 @@ window.onload = async () => {
     const allProducts = JSON.parse(localStorage.getItem("products")) || [];
     displayProducts(allProducts); 
 };
+
+// change the color when the nav links is clicked
+document.querySelectorAll('.nav-links').forEach(link => {
+    link.addEventListener('click', function(event) {
+        document.querySelectorAll('.nav-links').forEach(link => {
+            link.classList.remove('active-link');
+        });
+        this.classList.add('active-link');
+    });
+});
+
+           
