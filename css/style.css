@@ -168,4 +168,25 @@ hr{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
-
+/* contact us styles */
+.contactus{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 45px;
+}
+.forms{
+    width: 300px;
+    margin-left: 39%;
+    margin-top: 40px;
+}
+.send{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 80px;
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+   
+}
+  
