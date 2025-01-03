@@ -6,7 +6,16 @@
 .navbar{
     text-align: center;
     align-content: center;
-}.two{
+}
+.nav-buttons{
+    color: black;
+}
+.nav-buttons:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.two{
     margin-left: 150px;    
 }
 .three{
@@ -27,11 +36,16 @@
     position: absolute;
     z-index: 2;
     color: white;
-    top: 300px;
+    top: 280px;
     margin-left: 45px;
 }
 .article{
    font-size: 60px;
+}
+.buttons:hover{
+    background-color: black;
+    color: white;
+    border: none;
 }
 /* products styles */
 .latestproducts{
@@ -65,6 +79,9 @@ hr{
     height: 250px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+.api-images:hover{
+    transform: scale(1.02);
 
 }
 .product-price{
@@ -74,6 +91,9 @@ hr{
     margin-top: 8px;
     margin-bottom: 1rem;
 
+}
+.product-price:hover{
+    transform: scale(1.02); 
 }
 .details-button{
     padding-right: 16px;
@@ -89,6 +109,9 @@ hr{
     margin-bottom: 25px;
     margin-right: 8px;
 }
+.details-button:hover{
+    transform: scale(1.02); 
+}
 .add-to-cart-button{
     padding-right: 16px;
     padding-left: 16px;
@@ -101,6 +124,9 @@ hr{
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 25px;
+}
+.add-to-cart-button:hover{
+    transform: scale(1.02); 
 }
 .footer{
     text-align: center;
@@ -186,4 +212,33 @@ hr{
     text-align: center;
    
 }
+/* cart styles */
+.cart-text{
+text-align: center;
+font-size: 40px;
+margin-top: 20px;
+}
+.cart-hr{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.carttext{
+    text-align: center;
+    width: 80%;
+    height: 250px;
+    margin-left: 100px;
+    align-content: center;
+  
+ 
+}
+.carthead{
+    font-size: 60px;
+    font-weight: normal;
+}
+.ContinueShopping{
+    width:fit-content;
+    margin-left: 43%;
+}
+
   
