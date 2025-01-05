@@ -11,6 +11,7 @@ async function fetchData() {
         alert("Takes more time then usual to load products. Please refresh the page.");
     }
 }
+
 // Function to truncate text to a specified length
 function truncateText(text, length) {
     if (text.length > length) {
@@ -18,10 +19,12 @@ function truncateText(text, length) {
     }
     return text;
 }
+
 // Display products based on the selected category
 function displayProducts(products) {
     const container = document.getElementById("productContainer");
     container.innerHTML = ""; 
+
     products.forEach((product) => {
         const productDiv = document.createElement("div");
         productDiv.classList.add("product");
@@ -36,6 +39,7 @@ function displayProducts(products) {
         container.appendChild(productDiv);
     });
 }
+
 // Filter products by category
 function filterProducts(category) {
     const allProducts = JSON.parse(localStorage.getItem("products")) || [];
@@ -48,6 +52,7 @@ function filterProducts(category) {
         displayProducts(filteredProducts);
     }
 }
+
 // Add event listeners to buttons
 document.querySelectorAll(".buttons button").forEach((button) => {
     button.addEventListener("click", () => {
@@ -55,12 +60,14 @@ document.querySelectorAll(".buttons button").forEach((button) => {
         filterProducts(category);
     });
 });
+
 // Fetch data on page load and display all products
 window.onload = async () => {
     await fetchData(); 
     const allProducts = JSON.parse(localStorage.getItem("products")) || [];
     displayProducts(allProducts); 
 };
+
 // change the color when the nav links is clicked
 document.querySelectorAll('.nav-links').forEach(link => {
     link.addEventListener('click', function(event) {
@@ -70,5 +77,3 @@ document.querySelectorAll('.nav-links').forEach(link => {
         this.classList.add('active-link');
     });
 });
-
-           
