@@ -1,15 +1,10 @@
 
-async function fetchData() {
-    const apiUrl = "https://fakestoreapi.com/products"; 
-    try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        localStorage.setItem("products", JSON.stringify(data)); 
-        displayProducts(data); 
-    } catch (error) {
-        console.error("Error fetching data:", error);
-        alert("Takes more time then usual to load products. Please refresh the page.");
-    }
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Function to update cart count
+function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    cartCount.textContent = cart.length;
 }
 
 // Function to truncate text to a specified length
@@ -37,6 +32,8 @@ function displayProducts(products) {
             <button class="add-to-cart-button" data-id="${product.id}">Add to Cart</button>
         `;
         container.appendChild(productDiv);
+
+       
     });
 }
 
@@ -66,9 +63,9 @@ window.onload = async () => {
     await fetchData(); 
     const allProducts = JSON.parse(localStorage.getItem("products")) || [];
     displayProducts(allProducts); 
-};
+}; 
 
-// change the color when the nav links is clicked
+// Change the color when the nav links are clicked
 document.querySelectorAll('.nav-links').forEach(link => {
     link.addEventListener('click', function(event) {
         document.querySelectorAll('.nav-links').forEach(link => {
