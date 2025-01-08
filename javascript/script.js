@@ -54,7 +54,7 @@ function filterProducts(category) {
 }
 
 // Add event listeners to buttons
-document.querySelectorAll(".buttons button").forEach((button) => {
+document.querySelectorAll(".btns").forEach((button) => {
     button.addEventListener("click", () => {
         const category = button.getAttribute("data-category");
         filterProducts(category);

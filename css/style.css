@@ -42,11 +42,11 @@
 .article{
    font-size: 60px;
 }
-/* .buttons:hover{
+.buttons:hover{
     background-color: black;
     color: white;
     border: none;
-} */
+}
 /* products styles */
 .latestproducts{
     margin-left: 35%;
@@ -80,10 +80,10 @@ hr{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-/* .api-images:hover{
+.api-images:hover{
     transform: scale(1.02);
 
-} */
+}
 .product-price{
     border-top: 1px solid rgb(203, 197, 197);
     border-bottom: 1px solid rgb(203, 197, 197);
@@ -92,9 +92,9 @@ hr{
     margin-bottom: 1rem;
 
 }
-/* .product-price:hover{
+.product-price:hover{
     transform: scale(1.02); 
-} */
+}
 .details-button{
     padding-right: 16px;
     padding-left: 16px;
@@ -109,9 +109,9 @@ hr{
     margin-bottom: 25px;
     margin-right: 8px;
 }
-/* .details-button:hover{
+.details-button:hover{
     transform: scale(1.02); 
-} */
+}
 .add-to-cart-button{
     padding-right: 16px;
     padding-left: 16px;
@@ -125,9 +125,9 @@ hr{
     margin-top: 8px;
     margin-bottom: 25px;
 }
-/* .add-to-cart-button:hover{
+.add-to-cart-button:hover{
     transform: scale(1.02); 
-} */
+}
 .footer{
     text-align: center;
     margin-top: 40px;
