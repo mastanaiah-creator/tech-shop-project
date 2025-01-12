@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header>
         <div class="  mb-3 navbar justify-content-start bg-light p-4">
             <div class=" fw-bold ms-5  logo">
@@ -23,20 +23,25 @@
             <div class="three">
                 <a href="http://127.0.0.1:5500/html/login.html" class="text-decoration-none ms-4  fs-5 border border-2  border-black p-2 rounded-1 nav-buttons"><span class="bi bi-box-arrow-in-right me-2 fw-bold"></span>Login</a>
                 <a href="http://127.0.0.1:5500/html/register.html" class="text-decoration-none ms-4  fs-5  border border-2  border-black p-2 rounded-1 nav-buttons"><span class="bi bi-person-fill-add me-2"></span>Register</a>
-                <a href="#" class="text-decoration-none ms-4  fs-5  border border-2  border-black p-2 rounded-1 nav-buttons"><span class="bi bi-cart3 me-2 "></span>Cart</a>
+                <a href="#" class="text-decoration-none ms-4  fs-5  border border-2  border-black p-2 rounded-1 nav-buttons"><span class="bi bi-cart3 me-2 "></span> <span class="cart-count" class="badge bg-black ">0</span></a>
             </div>
         </div>
     </header>
     <div>
-        <div>
-            <h2 class="cart-text">Cart</h2>
-            <hr class="cart-hr">
+        
+    
+        <h1 class="ccart text-center">Cart</h1>
+        <div class="line">
+            <hr>
         </div>
-    <div class="cart-items" id="cartItemsContainer"></div>
-    <div class="carttext bg-light">
-        <h1 class="carthead">Your Cart is Empty</h1><br>
-        <button class="form-control ContinueShopping"><span class="bi bi-arrow-left-square-fill"></span> Continue Shopping</button>
-    </div>
+        <div class="container3 text-center bg-light ms-5 me-5 ">
+            
+            <h1 class="empty">Your Cart is Empty</h1><br>
+            <button class="button btn btn-outline-dark" id="cbtn">
+                <span class="bi bi-arrow-left  "> Continue Shopping</span> 
+            </button>
+            
+       </div>
   
 
 
@@ -46,5 +51,8 @@
             <span>Made with <span class="bi bi-heart-fill text-danger ms-1 me-1 "></span> by</span> <span class="fs-5 text-decoration-underline"> MASTHAN</span>
          </div>
     </footer>
+    <script src="../javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
 </body>
 </html>

@@ -19,7 +19,7 @@
     margin-left: 150px;    
 }
 .three{
-    margin-left: 250px;
+    margin-left: 200px;
 }
 .nav-links{
     color: rgb(106, 100, 100);
@@ -232,13 +232,14 @@ margin-top: 20px;
   
  
 }
-.carthead{
-    font-size: 60px;
-    font-weight: normal;
-}
 .ContinueShopping{
-    width:fit-content;
+    width: fit-content;
     margin-left: 43%;
+    margin-top: 15px;
+   
 }
-
-  
+.empty{
+    height:auto;
+    align-content: center;
+}
+   
