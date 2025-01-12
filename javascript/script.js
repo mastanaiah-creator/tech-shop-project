@@ -203,3 +203,33 @@ function loadCartItems() {
     updateCartCount(); 
 }
 
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1); 
+    localStorage.setItem('cart', JSON.stringify(cart)); 
+    loadCartItems(); 
+    updateCartCount();
+}
+
+function updateQuantity(index, change) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (!cart[index].quantity) {
+        cart[index].quantity = 1; 
+    }
+
+    cart[index].quantity += change;
+
+    if (cart[index].quantity < 1) {
+        cart.splice(index, 1); // Remove item if quantity is less than 1
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart)); 
+    console.log("Cart after quantity update:", cart);
+    loadCartItems(); 
+}
+
+// Event listener to load cart items when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    loadCartItems(); 
+});
+
