@@ -171,7 +171,7 @@ function loadCartItems() {
                             <p id="per-item-price-${index}" class="price">
                                 ${product.quantity || 1} \u00D7 $${product.price.toFixed(2)}
                             </p>
-                            <button class="remove btn btn-danger" onclick="removeFromCart(${index})">Remove</button>
+                            <button class="remove fs-3 bi bi-trash text-danger" onclick="removeFromCart(${index})"></button>
                         </div>
                     </div>
                     <hr class="tline">

@@ -243,4 +243,185 @@ margin-top: 20px;
     height:auto;
     align-content: center;
 }
+
+.ccart{
+    text-align: center;
+}
+.line{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.line hr{
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+.empty{
+    font-weight: 350;
+}
+.container3 button{
+    padding: 6px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 20px;
+}
+.left{
+    font-size: 20px;
+    font-weight:bolder;
+}
+.container3{
+    text-align: center;
+    background-color: rgb(248, 245, 245);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.end{
+    text-align: center;
+    font-size: 22px;
+}
+.end u{
+    font-size: 25px;
+}
+.end .heart{
+    color: rgb(242, 9, 9);
+}
+.cart-item-image{
+    height: 120px;
+    width: 150px;
+    margin-left: -30px;
+}
+.cart-item{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.cart-item h3{
+    width: 400px;
+    font-size: 25px;
+    text-align: start;
+    padding-top: 20px;
+    font-weight: 700;
+}
+.cart-items{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.fcart{
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+.cart-top{
+    font-size: 30px;
+    background-color: rgb(250, 247, 247);
+    border-radius: 8px 8px 0 0;
+    display: block;
+    padding: 15px 0 15px 30px;
+    text-align: start;
+    font-weight: 500;
+}
+.fcart2{
+    border: 2px solid gray;
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+}
+.oline{
+    margin-top: -24px;
+    margin-left: 300px;
+}
+.tline{
+    height: 2px;
+    border: none;
+    background-color: black;
+    margin-left: 300px;
+    /* margin-right: 30px; */
+}
+.cart-item-details button{
+    border: none;
+    font-size: 35px;
+}
+.minus{
+    margin-right: 35px;
+    font-weight: 500;
+
+}
+.plus{
+    margin-left: 35px;
+    font-weight: 500;
+    
+}
+.summary{
+    font-size: 28px;
+    background-color: rgb(250, 247, 247);
+    border-radius: 8px 8px 0 0;
+    display: block;
+    padding: 15px 0 25px 30px;
+    text-align: start;
+    font-weight: 500;
+}
+.ooline{
+    margin-top: -10px;
+    margin-left: 300px;
+
+}
+.price{
+    font-size: 25px;
+    font-weight: bold;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.lone{
+    margin-left: 15px;
+    font-size: 22px;
+}
+.ltwo{
+    margin-right: 15px;
+    font-size: 22px;
+}
+.shipping{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.sone{
+    margin-left: 15px;
+    font-size: 22px;
+}
+.stwo{
+    margin-right: 15px;
+    font-size: 22px;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.aone{
+    margin-left: 15px;
+    font-size: 22px;
+}
+.atwo{
+    margin-right: 15px;
+    font-size: 22px;
+}
+.check{
+    margin-top: 30px;
+    width: 280px;
+    
+}
+.fcart2 button{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
    
